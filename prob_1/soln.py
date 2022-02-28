@@ -1,3 +1,9 @@
+"""
+Time complexity: O(n)
+Space complexity: O(n)
+
+"""
+
 def two_sum(self, nums, target):
 
     a_map = {}
