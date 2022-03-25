@@ -12,5 +12,5 @@ def two_sum(self, nums, target):
         res = target - nums[i]
 
         if res in a_map:
-            return [i, a_map[res]]
+            return [a_map[res], i]
         a_map[nums[i]] = i
