@@ -79,6 +79,9 @@ class Solution:
         The metadata here calculating the sum of all the elements
             in the array in advance
         
+        TIME COMPLEXITY: O(n)
+        SPACE COMPLEXITY: O(n)
+        
     '''
     def fetch_difference_array(self, nums):
         

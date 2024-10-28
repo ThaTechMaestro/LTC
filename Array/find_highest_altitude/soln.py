@@ -1,3 +1,8 @@
+'''
+Question:
+    https://www.designgurus.io/course-play/grokking-data-structures-for-coding-interviews/doc/problem-4-find-the-highest-altitude-easy
+    https://leetcode.com/problems/find-the-highest-altitude/description/
+'''
 class Solution:
     
     '''
