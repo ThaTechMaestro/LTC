@@ -6,13 +6,17 @@
 # print(set(a))
 
 a = []
-# a.append(4)
-# a.append(5)
-# a.append(6)
+# print(sum(a))
+a.append(4)
+a.append(5)
+a.append(6)
+print(a)
 
+for i in range(1,5+1):
+    print(i)
 
-for i in range(len(a)):
-    print("I am empty")
+# for i in range(len(a)):
+#     print("I am empty")
 
-print(len(a))
+# print(len(a))
 # python3 -m pytest -v tests/playground.py
