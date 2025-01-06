@@ -20,6 +20,7 @@ class Solution(object):
             How can this be further improved?
         """
 
+        #---------------
         '''
         Initial Solution:
             Cons - repeated use of modulo
@@ -42,7 +43,7 @@ class Solution(object):
         return answer
         '''
         
-
+        #---------------
         """
         Without the use of modulo
         """
