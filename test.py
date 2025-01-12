@@ -1,3 +1,5 @@
+from collections import Counter
+
 # def printer():
 #     a = "dog"
 #     print("Hello world I am ", a)
@@ -17,9 +19,19 @@ print(a//2)
 # print(len(a))
 # python3 -m pytest -v tests/playground.py
 
-a = 0
+# a = 0
 
-if a:
-    print("valid")
-else:
-    print("Invalid")
+# if a:
+#     print("valid")
+# else:
+#     print("Invalid")
+
+x = "aseinerks"
+a = "addddaaaaae"
+
+x_count = Counter(x)
+print(x_count)
+print(x_count.items)
+
+for x,y in x_count.items():
+    print(x,y)
