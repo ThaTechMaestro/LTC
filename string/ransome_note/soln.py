@@ -92,5 +92,4 @@ if __name__ == "__main__":
 """"
 Sample of counter appleid on a string:
 Counter({'s': 2, 'e': 2, 'a': 1, 'i': 1, 'n': 1, 'r': 1, 'k': 1})
-
 """

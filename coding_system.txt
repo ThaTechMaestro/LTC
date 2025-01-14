@@ -16,4 +16,5 @@ System:
     6. Repeat, step 2-4
 
     7. Once Satisfied, Check for syntax errors or minute errors 
-    8. Hit Run
+    8. Hit Run (Think of it this way, everytime you hit run
+        you lose money or its very expensive)

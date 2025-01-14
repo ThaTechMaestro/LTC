@@ -29,9 +29,34 @@ print(a//2)
 x = "aseinerks"
 a = "addddaaaaae"
 
-x_count = Counter(x)
-print(x_count)
-print(x_count.items)
+# x_count = Counter(x)
+# print(x_count)
+# print(x_count.items)
 
-for x,y in x_count.items():
-    print(x,y)
+# for x,y in x_count.items():
+#     print(x,y)
+
+a = [1,2,3,4,4]
+print(max(a))
+
+index = 0
+k = 2
+
+final = max(a[index:index+k])
+print(final)
+
+
+from collections import deque
+
+# Create a deque
+deque_obj = deque()
+
+# Add elements
+deque_obj.append(1)  # Add to back
+deque_obj.appendleft(2)  # Add to front
+deque_obj.append(3)
+
+# Remove elements
+
+# Print the remaining items in the deque
+print(list(deque_obj)) 
