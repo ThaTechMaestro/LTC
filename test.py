@@ -49,14 +49,19 @@ print(final)
 from collections import deque
 
 # Create a deque
-deque_obj = deque()
+# deque_obj = deque()
 
-# Add elements
-deque_obj.append(1)  # Add to back
-deque_obj.appendleft(2)  # Add to front
-deque_obj.append(3)
+# # Add elements
+# deque_obj.append(1)  # Add to back
+# deque_obj.appendleft(2)  # Add to front
+# deque_obj.append(3)
 
 # Remove elements
 
 # Print the remaining items in the deque
-print(list(deque_obj)) 
+# print(list(deque_obj)) 
+
+a = "123"
+
+for i in range(len(a)):
+    print(a[i])
