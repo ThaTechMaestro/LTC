@@ -10,7 +10,7 @@ PROMPT FOR IMPROVEMENT:
     how can it be improved
     Just give the 2 most optimised solution along with the old solution, 
     always add their space and time complexity 
-    plus cater for edgecase
+    plus cater for edgecase in one file
     
 '''
 
