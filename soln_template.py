@@ -6,11 +6,18 @@ Improvement Question:
     how can it be improved?
 
 PROMPT FOR IMPROVEMENT:
-    Here is a my first solution, what are the downsides to the solution and
-    how can it be improved
-    Just give the 2 most optimised solution along with the old solution, 
-    always add their space and time complexity 
-    plus cater for edgecase in one file
+    Solved a coding problem using my own solution. Here’s the code for my solution:
+
+    [Insert Your Solution Code Here]
+
+    Please analyze the following:
+
+    Identify any downsides or inefficiencies in my solution.
+    Provide two optimized solutions that improve on my code in terms of time complexity, space complexity, or general efficiency.
+    Include the time and space complexity for all three solutions (my solution, and the two optimized solutions).
+    Address edge cases that my solution and the optimized solutions should handle.
+    Present the output in one single file.
+    Ensure the file includes detailed code comments for each solution and is written in Python.
     
 '''
 
