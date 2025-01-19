@@ -4,6 +4,8 @@ Question
     
     Problem description not super clear,
     Revisit this after a week
+    
+    No of times Resolved: 1
 '''
 
 class Solution(object):
