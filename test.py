@@ -59,12 +59,6 @@ from collections import deque
 # Remove elements
 
 # Print the remaining items in the deque
-# print(list(deque_obj)) 
-
-a = "123"
-x = 5
-
-for 1 to x:
-    
+# print(list(deque_obj))  
 for i in range(len(a)):
     print(a[i])
