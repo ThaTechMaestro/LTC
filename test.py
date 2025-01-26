@@ -62,6 +62,9 @@ from collections import deque
 # print(list(deque_obj)) 
 
 a = "123"
+x = 5
 
+for 1 to x:
+    
 for i in range(len(a)):
     print(a[i])

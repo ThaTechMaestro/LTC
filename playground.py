@@ -1,5 +1,4 @@
-a = [1,2,3]
-a.append(4)
-print(a)
-a.pop()
-print(a)
+x = 123
+print(len(str(x)))
+for a in x:
+    print(a)
