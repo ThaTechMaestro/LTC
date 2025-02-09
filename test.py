@@ -7,8 +7,8 @@ from collections import Counter
 # a = (1,1,2,3)
 # print(set(a))
 
-a = 4
-print(a//2)
+# a = 4
+# print(a//2)
 
 # for i in range(1,5+1):
 #     print(i)
@@ -36,17 +36,17 @@ a = "addddaaaaae"
 # for x,y in x_count.items():
 #     print(x,y)
 
-a = [1,2,3,4,4]
-print(max(a))
+# a = [1,2,3,4,4]
+# print(max(a))
 
-index = 0
-k = 2
+# index = 0
+# k = 2
 
-final = max(a[index:index+k])
-print(final)
+# final = max(a[index:index+k])
+# print(final)
 
 
-from collections import deque
+# from collections import deque
 
 # Create a deque
 # deque_obj = deque()
@@ -60,5 +60,12 @@ from collections import deque
 
 # Print the remaining items in the deque
 # print(list(deque_obj))  
-for i in range(len(a)):
-    print(a[i])
+
+
+a = [1]
+mid = len(a)//2
+print(mid)
+# print(a[mid+1:])
+print(a[mid+1:])
+
+
