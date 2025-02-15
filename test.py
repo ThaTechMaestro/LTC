@@ -62,10 +62,21 @@ a = "addddaaaaae"
 # print(list(deque_obj))  
 
 
-a = [1]
-mid = len(a)//2
-print(mid)
+# a = [1]
+# mid = len(a)//2
+# print(mid)
+# # print(a[mid+1:])
 # print(a[mid+1:])
-print(a[mid+1:])
+
+cardStack = []
+cardStack.append('5 of diamonds')
+print(','.join(cardStack))
+cardStack.append('3 of clubs')
+print(','.join(cardStack))
+cardStack.append('ace of hearts')
+print(','.join(cardStack))
+cardStack.pop()
+print(','.join(cardStack))
+
 
 

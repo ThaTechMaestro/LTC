@@ -18,3 +18,22 @@ System:
     7. Once Satisfied, Check for syntax errors or minute errors 
     8. Hit Run (Think of it this way, everytime you hit run
         you lose money or its very expensive)
+
+
+Intuition:
+- What is the meat of this problem?
+    What is the problem testing for exactly?
+- Where are the friction or resistance in grasping it
+    slow down there & smoothen it out
+
+
+--------------------------
+
+
+SECTIONS (Tooling System) -> Similar To Mathematical Modelling
+- Origin or a pattern / Reason behind a pattern
+- Problem Idenitification
+- Problem to code translation
+- Systematic Code review
+- Thinking about & Handling Edge cases 
+- Done
