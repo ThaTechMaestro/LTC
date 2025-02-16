@@ -2,4 +2,4 @@ Helpful resources to intuitively understand recursion
 - 2nd answer here -> https://www.quora.com/What-should-I-do-if-I-cant-get-my-head-around-recursion-and-hence-cant-learn-important-algorithms
 - code visualisation -> https://pythontutor.com/python-compiler.html#mode=edit
 - Problems List -> https://leetcode.com/problem-list/recursion/
-- Book1 -> https://inventwithpython.com/recursion/
+- Book1 -> https://inventwithpython.com/recursion/ [Really Good -> Mental picture and right concept]

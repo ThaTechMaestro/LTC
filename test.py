@@ -4,31 +4,6 @@ from collections import Counter
 #     a = "dog"
 #     print("Hello world I am ", a)
 
-# a = (1,1,2,3)
-# print(set(a))
-
-# a = 4
-# print(a//2)
-
-# for i in range(1,5+1):
-#     print(i)
-
-# for i in range(len(a)):
-#     print("I am empty")
-
-# print(len(a))
-# python3 -m pytest -v tests/playground.py
-
-# a = 0
-
-# if a:
-#     print("valid")
-# else:
-#     print("Invalid")
-
-x = "aseinerks"
-a = "addddaaaaae"
-
 # x_count = Counter(x)
 # print(x_count)
 # print(x_count.items)
@@ -62,21 +37,22 @@ a = "addddaaaaae"
 # print(list(deque_obj))  
 
 
-# a = [1]
-# mid = len(a)//2
-# print(mid)
-# # print(a[mid+1:])
-# print(a[mid+1:])
+n = 3
 
-cardStack = []
-cardStack.append('5 of diamonds')
-print(','.join(cardStack))
-cardStack.append('3 of clubs')
-print(','.join(cardStack))
-cardStack.append('ace of hearts')
-print(','.join(cardStack))
-cardStack.pop()
-print(','.join(cardStack))
+result = 1
+
+for i in range(1,n+1):
+    result*=i
+
+print(result)
+
+def rec(n):
+
+    if n == 1:
+        return 1
+    return n * rec(n-1)
+    
+
 
 
 
