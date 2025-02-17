@@ -41,16 +41,42 @@ n = 3
 
 result = 1
 
-for i in range(1,n+1):
-    result*=i
+def fibonacci(nthNumber):
+    a, b = 1, 1  # Line ❶
+    print('a = %s, b = %s' % (a, b))
+    
+    for i in range(2, nthNumber):
+        a, b = b, a + b  # Line ❷ - Get the next Fibonacci number
+        print('a = %s, b = %s' % (a, b))
+    
+    return a
 
-print(result)
+'''
+take in a counter named 10
+    decrease it in every method call
+    
+    Base:
+        if n == 3:
+            return 1,1
+    a,b = fib(n-1)
+    return b, a+b
 
-def rec(n):
+I am slightly confused with the passing in of the values
 
-    if n == 1:
-        return 1
-    return n * rec(n-1)
+    
+'''
+# print(fibonacci(10))
+
+def fib(n):
+    
+    if n == 2:
+        return 1,1
+    
+    a,b = fib(n-1)
+    return b,a+b
+
+a,b = fib(10)
+print(b)
     
 
 
