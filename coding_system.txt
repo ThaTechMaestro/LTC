@@ -37,3 +37,21 @@ SECTIONS (Tooling System) -> Similar To Mathematical Modelling
 - Systematic Code review
 - Thinking about & Handling Edge cases 
 - Done
+
+
+---------
+
+The Intuition System (Pattern Recognition)
+- What is the core problem here?
+- How does this map to a known pattern? (Divide & conquer, recursion, two-pointer, etc.)
+- What are the constraints? (Time, space, bottlenecks)
+- What’s making this problem hard? (Slow down, smooth it out)
+
+--------------------------
+
+Tooling System (Like Mathematical Modeling)
+- Pattern Recognition – What known technique applies?
+- Problem Identification – What’s the fundamental challenge?
+- Problem to Code Translation – How do I express this cleanly in code?
+- Systematic Code Review – Can I simplify, modularize, or optimize?
+- Handling Edge Cases & Scaling – Will this work for extreme cases?
