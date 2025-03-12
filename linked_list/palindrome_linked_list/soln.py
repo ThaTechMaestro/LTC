@@ -61,3 +61,53 @@ def isPalindrome(self, head):
     5. How do we modify this approach to restore the original list structure after checking?
     """
 
+    '''
+        Timless principles of recursion:
+            one node at a time
+            recursion is forward traversal first
+            one node at a time
+            
+        How do I solve this recursively?
+        What is the right mental model?
+        break it down slowly
+        
+        How do I get to the middle recursively?
+            how do I pass in the fast and slow pointers
+                without changing the method signature
+
+    '''
+    
+    ''''
+    recursive solution
+    '''
+def isPalindrome_Recursive(self, head):
+    """
+    Determines if a linked list is a palindrome using recursion.
+
+    Approach:
+    - Use recursion to traverse to the last node.
+    - Compare the first and last node as recursion unwinds.
+    - Use a mutable list `[head]` to persist the left pointer.
+
+    Time Complexity: O(n) (each node is visited once)
+    Space Complexity: O(n) (recursive call stack)
+    """
+    def check_palindrome(left, right):
+        if not right:
+            return True  # Base case: reached the end
+        
+        # Recursive call to move right pointer forward
+        is_palindrome = check_palindrome(left, right.next)
+        if not is_palindrome:
+            return False  
+        
+        # Compare values at left and right pointers (Palindrome Check)
+        if left[0].val != right.val:
+            return False  
+        
+        # Move left pointer forward as recursion unwinds
+        left[0] = left[0].next
+        return True
+    
+    return check_palindrome([head], head)
+        
