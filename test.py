@@ -84,5 +84,17 @@ for i in range(len([0])):
 print("Yes")   
 
 
+class ListNode(object):
+    
+    def __init__(self, val=0, next=None):
+        self.val = val
+        self.next = next
+
+a = ListNode()
+
+def act():
+    print(6*"abc")
+act()
+
 
 
