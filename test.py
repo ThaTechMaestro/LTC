@@ -92,9 +92,9 @@ class ListNode(object):
 
 a = ListNode()
 
-def act():
-    print(6*"abc")
-act()
-
+if a.next:
+    print("None is true")
+else:
+    print("false")
 
 
