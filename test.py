@@ -1,100 +1,42 @@
-from collections import Counter
+def decodeString(s: str) -> str:
+    def decode_from(i):
+        current_string = ""
+        repeat_count = 0
 
-# def printer():
-#     a = "dog"
-#     print("Hello world I am ", a)
+        while i < len(s):
+            char = s[i]
 
-# x_count = Counter(x)
-# print(x_count)
-# print(x_count.items)
+            if char.isdigit():
+                # Build the full repeat count (can be more than 1 digit)
+                repeat_count = repeat_count * 10 + int(char)
 
-# for x,y in x_count.items():
-#     print(x,y)
+            elif char == '[':
+                # Start decoding the substring inside brackets
+                i, decoded_substring = decode_from(i + 1)
 
-# a = [1,2,3,4,4]
-# print(max(a))
+                # Append the repeated substring
+                current_string += repeat_count * decoded_substring
 
-# index = 0
-# k = 2
+                # Reset repeat count for future numbers
+                repeat_count = 0
 
-# final = max(a[index:index+k])
-# print(final)
+            elif char == ']':
+                # End of current decoding segment, return control
+                return i, current_string
 
+            else:
+                # Normal characters, add to current segment
+                current_string += char
 
-# from collections import deque
+            i += 1
 
-# Create a deque
-# deque_obj = deque()
+        return current_string  # top-level return
 
-# # Add elements
-# deque_obj.append(1)  # Add to back
-# deque_obj.appendleft(2)  # Add to front
-# deque_obj.append(3)
+    # Kick off the decoding from index 0
+    result = decode_from(0)
 
-# Remove elements
+    # If it's a tuple (due to return from inside recursion), unwrap it
+    return result if isinstance(result, str) else result[1]
 
-# Print the remaining items in the deque
-# print(list(deque_obj))  
-
-
-# n = 3
-
-# result = 1
-
-# def fibonacci(nthNumber):
-#     a, b = 1, 1  # Line ❶
-#     print('a = %s, b = %s' % (a, b))
-    
-#     for i in range(2, nthNumber):
-#         a, b = b, a + b  # Line ❷ - Get the next Fibonacci number
-#         print('a = %s, b = %s' % (a, b))
-    
-#     return a
-
-'''
-take in a counter named 10
-    decrease it in every method call
-    
-    Base:
-        if n == 3:
-            return 1,1
-    a,b = fib(n-1)
-    return b, a+b
-
-I am slightly confused with the passing in of the values
-
-    
-'''
-# print(fibonacci(10))
-
-class Solution:
-    def kthCharacter(self, k: int) -> str:
-        def recur(v):
-            nonlocal k
-            if len(v) >= k:
-                return chr(v[k-1]+97)
-            return recur(v + [v[i]+1 if v[i] < 26 else 0 for i in range(len(v))])
-        
-        return recur([0])
-    
-
-for i in range(len([0])):
-    print(i)
-    print("Yes")
-print("Yes")   
-
-
-class ListNode(object):
-    
-    def __init__(self, val=0, next=None):
-        self.val = val
-        self.next = next
-
-a = ListNode()
-
-if a.next:
-    print("None is true")
-else:
-    print("false")
-
-
+s = "2[a]"
+print(decodeString(s))
