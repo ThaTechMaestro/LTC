@@ -52,6 +52,12 @@ Step 5: Follow-Up Questions to Deepen Understanding
 5. What is the worst-case runtime complexity for this solution?  
 
 This structured approach ensures a clear understanding of the problem and prepares for follow-up discussions in interviews. Let me know if you want me to apply this format automatically for future coding questions.
+
+
+Input
+Output
+Rule -> Action to be taken to achieve desired output
+Constraint -> Conditions
 '''
 
 class Solution:

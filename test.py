@@ -40,3 +40,9 @@ def decodeString(s: str) -> str:
 
 s = "2[a]"
 print(decodeString(s))
+
+
+# alternative
+
+for x in zip(range(10),range(5)):
+    print(x)
