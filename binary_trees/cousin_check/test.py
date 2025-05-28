@@ -1,9 +1,36 @@
 from collections import deque
 
-deque = deque([(1,2,3), (4,5,6)])
+class TreeNode:
+    def __init__(self, val: int, left=None, right=None):
+        self.val = val
+        self.left = left
+        self.right = right
 
-a = deque.popleft()
-b = deque.popleft()
 
-print(a)
-print(b)
+# def print_tree_level_by_level(root: TreeNode):
+#     if not root:
+#         return
+    
+#     queue = deque([root]) 
+    
+#     while queue:
+        
+#         level_size = len(queue)
+#         level_nodes = []
+        
+#         for _ in range(level_size)
+
+
+        
+a = [1,2,3,4]
+b = deque([1,2,3])
+# for i in b:
+#     print(i)dequ
+print(b.popleft())
+
+
+        
+        
+         
+        
+    
