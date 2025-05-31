@@ -22,11 +22,17 @@ class TreeNode:
 
 
         
-a = [1,2,3,4]
-b = deque([1,2,3])
-# for i in b:
-#     print(i)dequ
-print(b.popleft())
+# a = [1,2,3,4]
+# b = deque([1,2,3])
+# # for i in b:
+# #     print(i)dequ
+# print(b.popleft())
+
+a=[(1,2), (3,4), (5,6)]
+
+for i in a:
+    x,y = i
+    print(x,y)
 
 
         

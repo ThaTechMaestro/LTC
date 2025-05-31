@@ -20,12 +20,37 @@ def print_level(root):
             
         print(",".join(current_level))
 
+
 class TreeNode:
     def __init__(self, val, left=None, right=None):
         self.val=val
         self.left=left
         self.right=right
 
+def print_l(root):
+    
+    qu = deque([(root,0)])
+    
+    while qu:
+        
+        result=[]
+        
+        for i in range(len(qu)):
+            node,depth=qu.popleft()
+            result.append(f"{node.val} (depth={depth})") 
+            
+            if node.left:
+                qu.append((node.left,depth+1))
+            if node.right:
+                qu.append((node.right, depth+1))
+        
+        print({','.join(result)})      
+            
+            
+        
+    
+    
+    
 if __name__=="__main__":
     n4 = TreeNode(4)
     n5 = TreeNode(5)
@@ -33,7 +58,7 @@ if __name__=="__main__":
     n3 = TreeNode(3, right=n5)
     root = TreeNode(1,left=n2, right=n3)
     
-    print_level(root)
+    print_l(root)
 
 
         
