@@ -7,8 +7,7 @@ def print_level(root):
     queue = deque([root])
     
     while queue:
-        current_level = []
-        
+        current_level = []       
         for _ in range(len(queue)):
             node = queue.popleft()
             current_level.append(str(node.val))
