@@ -21,4 +21,9 @@ while left < right:
     right-=1
 
 
+            
+a=-1
+b=-2
+c=abs(a-b)
+print(c)
         

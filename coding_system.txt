@@ -4,7 +4,7 @@ System:
     2. Write a solution
     3. Calmly debug and walk-through your solution with inputs
         again and again, do not hit run button, this is a must
-        check for syntax and logic flaws
+        check for syntax, logic & state flaws
     4. Confirm it works for obvious test-cases/new test-cases
 
     5. Think of improvements and edge cases
@@ -18,6 +18,7 @@ System:
     7. Once Satisfied, Check for syntax errors or minute errors 
     8. Hit Run (Think of it this way, everytime you hit run
         you lose money or its very expensive)
+    9. Time & Space Complexity
 
 
 Intuition:
@@ -35,8 +36,16 @@ SECTIONS (Tooling System) -> Similar To Mathematical Modelling
 - Problem Idenitification
 - Problem to code translation
 - Systematic Code review
+    Logic Check
+    StateManagement, is the counter increased 
+        or data structures rightly updated
 - Thinking about & Handling Edge cases 
 - Done
+
+COMMON MISTAKE:
+    - STATE MANAGEMENT:
+        Forgetting to increase the counter or
+        updating the data Structure (x1)
 
 
 ---------

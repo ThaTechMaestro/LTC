@@ -7,32 +7,29 @@ class TreeNode:
         self.right = right
 
 
-# def print_tree_level_by_level(root: TreeNode):
-#     if not root:
-#         return
+def is_cousins(self, root, x, y):
     
-#     queue = deque([root]) 
+    def get_depth_and_parent(node, target):
+        queue = deque([(root, 0, None)]) #node, depth, parent
+        
+        while queue:
+            curr,depth,parent= queue.popleft()
+            
+            if curr.val == target:
+                return (depth, parent)
+            
+            if curr.left:
+                queue.append(curr.left, depth+1, curr)
+            
+            if curr.right:
+                queue.append(curr.right, depth+1, curr)
+        
+        return None,None
+
+    x_depth, x_parent = get_depth_and_parent(root,x)
+    y_depth, y_parent = get_depth_and_parent(root, y)
     
-#     while queue:
-        
-#         level_size = len(queue)
-#         level_nodes = []
-        
-#         for _ in range(level_size)
-
-
-        
-# a = [1,2,3,4]
-# b = deque([1,2,3])
-# # for i in b:
-# #     print(i)dequ
-# print(b.popleft())
-
-a=[(1,2), (3,4), (5,6)]
-
-for i in a:
-    x,y = i
-    print(x,y)
+    return (x_depth==y_depth) and (x_parent==y_parent)
 
 
         

@@ -46,3 +46,11 @@ print(decodeString(s))
 
 for x in zip(range(10),range(5)):
     print(x)
+    
+
+'''
+The array is sorted
+ two pointer, pointer1 at 0 and the other at 1
+ if the values of the two pointer are not the same increase the count
+ while pointer1 < arraySize
+'''
